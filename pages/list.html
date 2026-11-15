@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List</title>
+        <!--Connect stylesheet-->
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <!--Connect font API and stylesheet-->
+        <!--Font families: Cantarell (content) and Chango (headings)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Chango&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Connect scripts-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="/scripts/script.js"></script>
+
+       <!-- Upper navigation area -->
+        <div class="navigation-area"> <!-- color area to contain nav and logo -->
+            <nav>
+                
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/pages/search.html">Search for recipes</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="/pages/list.html">Shopping list</a>
+                    </li>
+                     -->
+                    <li>
+                        <a href="/pages/plan.html">Plan meals</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Content area-->
+        <div id="past-lists">
+            <!--View previous lists with resolution date-->
+            <h2>Created Lists</h2>
+            <button id="new-list">Create New List</button>
+            <form id="new-list-details">
+                
+            </form>
+            
+            <form id="list-selector">
+
+                <button type="submit">Select</button>
+            </form>
+
+            <!--View ingredients left from previous lists : ingredient totals compared against API result ingredients -->
+        
+        </div>
+
+        <div id="leftovers">
+            <h2>Remaining from Most Recent List</h2>
+        </div>
+
+        <div id="active-list">
+            <!--JS read in ingredient totals from Search page button press-->
+
+            <!--Display checkbox list with ingredient amounts -->
+            <!--Style list item content based on whether box is checked-->
+
+            <h2>Current List</h2>
+
+
+
+            <!--Select "checklist mode" for mobile-->
+        </div>
+
+        <div id="resolve-list">
+            <!--Button to resolve list and save checked content to remaining ingredients with date-->
+        </div>
+
+
+
+
+    </body>
+</html>

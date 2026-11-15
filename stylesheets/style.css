@@ -1,0 +1,150 @@
+body { 
+    background: #F5DBB6;
+    font-family: "Cantarell", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    }
+
+h1 { 
+  font-family: "Chango", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ }
+
+h2 { 
+ font-family: "Chango", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 { 
+  font-family: "Chango", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* NAV bar */
+
+.navigation-area {
+  background-color: #7D8C2A;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  display: inline-block; 
+  margin: 0 10px;
+}
+
+nav li a:hover {
+  background-color: #F4FDE8;
+  color: black;
+}
+
+/* Index page tabs */
+/* Reference: https://freefrontend.com/css-tabs/#pure-css-tab-module-l */
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 90%;
+  padding: 40px;
+  align-items: center;
+}
+ 
+.tabs label {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background-color: #53a7b1;
+  font-weight: bold;
+  transition: background ease 0.3s;
+}
+ 
+.tabs .tab {
+  order: 9;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+  padding: 20px;
+  box-shadow: -10px 10px 0px 0px black;
+}
+ 
+.tabs input[type="radio"] {
+  display: none;
+}
+ 
+.tabs input[type="radio"]:checked + label {
+  background: #fff;
+}
+ 
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+
+
+
+
+
+
+/* Recipe cards generated from API query */
+/* class recipe-card */
+.recipe-card {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 3px solid;
+  padding: 5px;
+}
+.recipe-card img {
+  width: 25%;
+  height: 25%;
+  border: 6px solid;
+}
+
+/* Recipe search field */ 
+#recipeSearchField {
+  padding: 4px;
+  margin: 6px;
+  display: block; 
+  width: 98%;
+  border: 3px solid;
+}
+#recipeSearchField input {
+  width: 93%;
+  height: 40px;
+  font-family: "Cantarell", sans-serif;
+  font-size: 20px;
+}
+#recipeSearchField button {
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  border-radius: 80%;
+  font-family: "Cantarell", sans-serif;
+  background-color: #53a7b1;
+}
+ 
+/* List styling */
+#past-lists {
+  border: 2px solid;
+  padding: 5px;
+  margin: 5px;
+}
+
+#active-list {
+  border: 2px solid;
+  padding: 5px;
+  margin: 5px;
+}

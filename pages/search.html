@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search</title>
+        <!--Connect stylesheet-->
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <!--Connect font API and stylesheet-->
+        <!--Font families: Cantarell (content) and Chango (headings)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Chango&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+    
+        <!-- Upper navigation area -->
+        <div class="navigation-area"> <!-- color area to contain nav and logo -->
+            <nav>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="/pages/search.html">Search for recipes</a>
+                    </li>
+                    -->
+                    <li>
+                        <a href="/pages/list.html">Shopping list</a>
+                    </li>
+                    <li>
+                        <a href="/pages/plan.html">Plan meals</a>
+                    </li>
+                </ul>
+        </div>
+
+        <!-- Content area-->
+        <!--Different color horizontal section to draw attention to filter options-->
+        <div class="filter-container">
+            <!--Input fields for user to set filter -->
+
+
+
+            <!--Input field to add to specific list (for later scheduling) -->
+
+
+
+
+        </div>
+        
+        <div id="search-area">
+            <div id="recipeSearchField">
+                <form id="searchForm" class="search-form" >
+                    <button type="submit" id="searchButton">Search</button>
+                    <input type="text" id="searchInput" placeholder="Search...">
+                </form>
+                <!--End of search form-->
+            </div>
+        </div>
+
+        <div id="results-display">
+            <!-- Display API recipe results as tabbed cards with category and cuisine on tab labels -->
+            <div class="recipes-wrapper">
+                <div id="recipesContainer">
+                    <!-- Placement area for API return -->
+                
+                <div id="recipesDetails">
+                    <!--Placement area for JavaScript function on API return -->
+                   <div>
+                    <!-- -->
+                   </div>
+                </div>
+
+                </div>
+            </div>
+            
+            <!--If ingredients in API result recipe have any amount left in the stored ingredients left from previous lists, change display of recipe card-->
+        </div>
+
+
+        <!--Selection area to view selected recipes and move to list-->
+        <div id="create-list">
+            <!--View recipes added to current "active" list in scrolling defined area -->
+
+
+            <!--Button to Create Grocery List from ["active"] list - event listener and handler, moves on to List page-->
+
+        </div>
+        <!--Connect scripts-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="/scripts/script.js"></script>
+    </body>
+</html>
