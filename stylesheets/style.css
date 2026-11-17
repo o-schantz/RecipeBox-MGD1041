@@ -64,6 +64,8 @@ nav li a:hover {
   background-color: #53a7b1;
   font-weight: bold;
   transition: background ease 0.3s;
+  font-family: "Cantarell", sans-serif;
+  font-size: 20px;
 }
  
 .tabs .tab {
