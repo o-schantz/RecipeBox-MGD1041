@@ -93,6 +93,42 @@ nav li a:hover {
   display: block;
 }
 
+/* Account forms and form table */
+
+/* Form table */ 
+.account-form-table {
+  border: 2px solid;
+  margin: 7%;
+  padding: 2%;
+}
+
+.account-form-table table {
+  border: 2px solid orange;
+  width: 100%;
+}
+
+.account-form-table th {
+  border: 2px solid;
+}
+
+.account-form-table form {
+  padding: 2%;
+  width: 80%;
+  border: 2px dashed;
+}
+
+.account-form-table label {
+    display: flex;
+  justify-content: space-between;
+}
+
+.account-form-table input {
+  width: 85%;
+}
+
+
+
+
 
 
 
