@@ -54,27 +54,32 @@ function renderRecipes(recipes){
       //data-recipe-id follows standard formatting of lowercase with -id at end
       const recipeCard = ` 
         <div class="recipe-card" data-recipe-id="${recipe.idMeal}">
-          <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}">
-          <h2>${recipe.strMeal}</h2>
-          <h3>${recipe.strCountry}</h3>
-          <ul id="ingredientsUL">
-            <li id="ingredientsLI">
-            
-            </li>
-          </ul>
-          <p>${recipe.strInstructions}</p>
+          <div class="recipe-card-details"
+            <h2 class="recipe-title card-top-line">${recipe.strMeal}</h2>
+            <button class="add-to-button card-top-line" id="save-recipe">Save Recipe</button>
+            <h3 class="country card-top-line">${recipe.strCountry}</h3>
+            <img src=${recipe.strMealThumb} alt=${recipe.strMeal}>
+            <p class="list-label">Ingredients:</p>
+            <ul class="ingredientsUL">
+              <li class="ingredientsLI">
+              
+              </li>
+            </ul>
+            <p class="recipe-instructions rec-details">${recipe.strInstructions}</p>
+            </div>
         </div>
       `; //Closing semicolon of recipeCard
       recipesContainer.innerHTML += recipeCard; //Add each recipe card with content to the HTML of recipesContainer
-      //for styling: the recipe cards are living in the recipesContainer element
+      //for styling: the recipe cards are in the recipesContainer element
+
+      //Image addresses are working
+      //console.log(recipe.strMealThumb);
+
+
     });
+    
   }
 }
-
-
-
-
-
 
 
 
