@@ -80,7 +80,7 @@
                         <!-- https://stackoverflow.com/questions/15801456/what-is-the-best-way-to-save-user-data-in-a-web-app-which-expects-frequent-user -->
                         <!-- https://medium.com/@hfeitosa/fb-questions-how-can-i-create-a-favorite-button-in-php-58c62a1901bc -->
                         <!-- Form for creating an account-->
-                        <form>
+                        <form action="accounts_post.php" method="POST">
                             <!-- UPDATE -->
                             <label for="usernameCreate">Create your username</label>
                             <input type="text" label="Username" placeholder="Create your username" name="usernameCreate" id="usernameCreate"><br>
@@ -94,14 +94,14 @@
 
                     <td>
                         <!-- Form for accessing an existing account -->
-                       <form>
+                       <form action="/scripts/accounts_post.php" method="POST">
                             <!-- UPDATE -->
-                            <label for="usernameCreate">Create your username</label>
-                            <input type="text" label="Username" placeholder="Create your username" name="usernameCreate" id="usernameCreate"><br>
-                            <label for="Create your password">Create your password</label>
-                            <input type="password" label="Password" placeholder="Create your password" name="passwordCreate" id="passwordCreate"><br>
+                            <label for="usernameExisting">Enter your username</label>
+                            <input type="text" label="usernameEnter" placeholder="Enter your username" name="usernameEnter" id="usernameEnter"><br>
+                            <label for="Create your password">Enter your password</label>
+                            <input type="password" label="Password" placeholder="Enter your password" name="passwordEnter" id="passwordEnter"><br>
                             <label for="Confirm your password">Confirm your password</label>
-                            <input type="password" label="Confirm Password" placeholder="Confirm your password" name="passwordConfirm" id="passwordConfirm"><br>
+                            <input type="password" label="Confirm Password" placeholder="Confirm your password" name="passwordConfirmExisting" id="passwordConfirm"><br>
                             <input type="submit" label="Create account" value="Log in" name="createSubmit"><br>
                         </form>
                         </form>
