@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Last validated: 11/20 -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +45,7 @@
             <input type="radio" name="tabs" id="tabone" checked="checked">
             <label for="tabone">Search</label>
             <div class="tab" id="step1">
-                <h2>Find recipes and filter by ingredients</h2>
+                <h1>Find recipes and filter by ingredients</h1>
                 <p>Find and browse recipes from TheMealDB.</p>
             </div>
 
@@ -52,7 +53,7 @@
                <input type="radio" name="tabs" id="tabtwo">
                 <label for="tabtwo">Shop</label>
             <div class="tab" id="step2">
-                <h2>Use your customized grocery list</h2>
+                <h1>Use your customized grocery list</h1>
                 <p>Reduce food waste and shop efficiently with grocery lists based on your selected recipes</p>
             </div>
 
@@ -60,7 +61,7 @@
             <input type="radio" name="tabs" id="tabthree">
             <label for="tabthree">Plan</label>
             <div class="tab" id="step3">
-                <h2>Assign recipes to days of the week</h2>
+                <h1>Assign recipes to days of the week</h1>
                 <p>Know how long your food will last with a meal planner integrated with your recipe and shopping list</p>
             </div>
         </div>
@@ -83,12 +84,12 @@
                         <form action="/scripts/accounts_post.php" method="POST">
                             <!-- UPDATE -->
                             <label for="usernameCreate">Create your username</label>
-                            <input type="text" label="Username" placeholder="Create your username" name="usernameCreate" id="usernameCreate"><br>
-                            <label for="Create your password">Create your password</label>
-                            <input type="password" label="Password" placeholder="Create your password" name="passwordCreate" id="passwordCreate"><br>
-                            <label for="Confirm your password">Confirm your password</label>
-                            <input type="password" label="Confirm Password" placeholder="Confirm your password" name="passwordConfirm" id="passwordConfirm"><br>
-                            <input type="submit" label="Create account" value="Create your account" name="createSubmit"><br>
+                            <input type="text" placeholder="Create your username" name="usernameCreate" id="usernameCreate"><br>
+                            <label for="passwordCreate">Create your password</label>
+                            <input type="password" placeholder="Create your password" name="passwordCreate" id="passwordCreate"><br>
+                            <label for="passwordConfirm">Confirm your password</label>
+                            <input type="password" placeholder="Confirm your password" name="passwordConfirm" id="passwordConfirm"><br>
+                            <input type="submit" value="Create your account" name="createSubmit"><br>
                         </form>
                     </td>
 
@@ -96,14 +97,13 @@
                         <!-- Form for accessing an existing account -->
                        <form action="/scripts/accounts_post.php" method="POST">
                             <!-- UPDATE -->
-                            <label for="usernameExisting">Enter your username</label>
-                            <input type="text" label="usernameEnter" placeholder="Enter your username" name="usernameEnter" id="usernameEnter"><br>
-                            <label for="Create your password">Enter your password</label>
-                            <input type="password" label="Password" placeholder="Enter your password" name="passwordEnter" id="passwordEnter"><br>
-                            <label for="Confirm your password">Confirm your password</label>
-                            <input type="password" label="Confirm Password" placeholder="Confirm your password" name="passwordConfirmExisting" id="passwordConfirm"><br>
-                            <input type="submit" label="Create account" value="Log in" name="createSubmit"><br>
-                        </form>
+                            <label for="usernameEnter">Enter your username</label>
+                            <input type="text" placeholder="Enter your username" name="usernameEnter" id="usernameEnter"><br>
+                            <label for="passwordEnter">Enter your password</label>
+                            <input type="password" placeholder="Enter your password" name="passwordEnter" id="passwordEnter"><br>
+                            <label for="passwordConfirm">Confirm your password</label>
+                            <input type="password" placeholder="Confirm your password" name="passwordConfirmExisting" id="passwordConfirmExisting"><br>
+                            <input type="submit" value="Log in" name="createSubmit"><br>
                         </form>
                     </td>
                 </tr>

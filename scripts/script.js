@@ -1,6 +1,8 @@
 //Reference: https://youtu.be/9n98o44tgAc?si=-HEr7gtLjOwSsphl
 // API docs: https://www.themealdb.com/documentation#authentication
 
+// Last validated: 11/20
+
 const apiBase = "themealdb.com/api/json/v2/1/";
 
 const searchForm = document.getElementById("searchForm");
