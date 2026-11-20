@@ -193,6 +193,8 @@ img {
 
 
 
+
+
 /* Recipe search field */ 
 #recipeSearchField {
   padding: 4px;
@@ -230,4 +232,10 @@ img {
   border: 2px solid;
   padding: 5px;
   margin: 5px;
+}
+
+
+/* Meal planner formatting */
+.container-calendar {
+  border: 4px solid;
 }
